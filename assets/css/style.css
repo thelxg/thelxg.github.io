@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ededed;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: #ededed;
+}
+
+a:hover, #socialIcons a:hover {
+    color: #9b30ff;
+    text-decoration: none;
+}
+
+.backgroundBlack {
+    background: #262626;
+}
+
+#socialMediaDiv {
+    color: #ededed;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 20px;
+}
+
+#socialIcons {
+    min-width: 60px;
+}
+
+#socialIcons a {
+    color: #ededed;
+}
+
+#socialIcons i {
+    margin-right: 10px;
+}
+
+#bgED {
+    background: #ededed;
+}
+
+#logo {
+    max-width: 60px;
+    transition: .1s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.02);
+}
+
+#est {
+    color: rgba(0, 0, 0, .5);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background: #ededed;
+}
+
+.show {
+    background: #ededed;
+}
+
+#navbarMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarMenu button {
+    border: none;
+}
+
+.nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#mainImg {
+    width: 100%;
+}
+
+.whiteBG {
+    background: #fff;
+} 
+
+#leagueNote, #cast, #sponsor {
+    background: #9b30ff;
+    color: #ededed;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+#leagueNote i, #cast i, #sponsor i {
+    margin-right: 5px;
+}
+
+#claws {
+    width: 100%;
+}
+
+#tobble, #othTobble, #tobble3 {
+    width: 100%;
+}
+
+footer {
+    background: #262626;
+    color: #ededed;
+    display: flex;
+    width: 100%;
+}
+
+#whiteLogo {
+    width: 40px;
+}
+
+@media screen and (max-width: 375px) {
+    #socialMediaWrapper {
+        display: none;
+    }
+    #est {
+        display: none;
+    }
+    #logo {
+        max-width: 50px;
+    }
+}
