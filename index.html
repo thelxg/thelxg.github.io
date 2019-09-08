@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000">
+
     <title>The LXG </title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -12,7 +14,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,700|Quicksand:400,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
@@ -47,17 +50,17 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
                     <ul class="navbar-nav mt-3 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">League Notes</a>
+                            <a class="nav-link px-3" href="notes.html">League Notes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">LXG Sitdown</a>
+                            <a class="nav-link px-3" href="sitdown.html">LXG Sitdown</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">The Menu</a>
+                            <a class="nav-link px-3" href="menu.html">The Menu</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link px-3 dropdown-toggle" href="sidebets.html" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Sidebets
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -68,7 +71,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">History</a>
+                            <a class="nav-link px-3" href="history.html">History</a>
                         </li>
                     </ul>
                 </div>
@@ -76,15 +79,19 @@
         </nav>
     </div>
     <div id="bgED">
-        <img src="assets/images/mainImg.png" id="mainImg">
+        <picture>
+            <source media="(max-width: 375px)" srcset="assets/images/homeImgSmall.png">
+            <source media="(min-width: 380px)" srcset="assets/images/homeImg.png">
+            <img src="assets/images/homeImg.png" id="mainImg">
+        </picture>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-sm-12 whiteBG">
-                <div id="leagueNote">
-                    <h6 class="mb-0"><i class="fas fa-book-dead"></i>LATEST LEAGUE NOTE</h6>
+                <div class="my-3" id="leagueNote">
+                    <h6 class="icon mb-0"><i class="fas fa-book-dead"></i>LATEST LEAGUE NOTE</h6>
                 </div>
-                <p class="mt-3">Hello League!</p>
+                <p>Hello League!</p>
 
                 <p>It’s been awhile since we got slapped across the face with a good ol' wall of text note. It's really
                     only
@@ -681,15 +688,27 @@
                     </div>
             </div>
             <div class="col-lg-4 col-sm-12 whiteBG">
-                <div id="cast">
-                    <h6 class="mb-0"><i class="fas fa-podcast"></i>LATEST SITDOWN</h6>
+                <div class="mt-3" id="cast">
+                    <h6 class="icon mb-0"><i class="fas fa-podcast"></i>LATEST SITDOWN</h6>
                 </div>
-                <iframe src="https://anchor.fm/lxgsitdown/embed/episodes/LXG-Sitdown-Season-9-Trailer-e56h5g/a-am5usf"
-                    height="102px" width="100%" frameborder="0" scrolling="no" class="mt-3"></iframe>
+                <div class="mt-3">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/67HORzkcFtEssz7AL6jevb" width="100%"
+                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div id="vid" class="mt-3">
+                    <h6 class="icon mb-0"><i class="fab fa-youtube"></i></i>LATEST VIDEO</h6>
+                </div>
+                <div class="mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ktmigfCB74c" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        id="castVid"></iframe>
+                </div>
                 <div id="sponsor" class="mt-3">
-                    <h6 class="mb-0"><i class="far fa-money-bill-alt"></i>OUR SPONSOR</h6>
+                    <h6 class="icon mb-0"><i class="far fa-money-bill-alt"></i>UNOFFICIAL SPONSORS</h6>
                 </div>
-                <img src="assets/images/claws.jpeg" class="mt-3" id="claws">
+                <div class="mt-3">
+                    <img src="assets/images/claws.jpeg" id="claws">
+                </div>
             </div>
         </div>
     </div>
@@ -699,11 +718,11 @@
                 <img src="assets/images/whiteLogo.png" id="whiteLogo">
             </div>
             <div class="row d-flex justify-content-center pt-3">
-                <a class="px-3" href="#">League Notes</a>
-                <a class="px-3" href="#">LXG Sitdown</a>
-                <a class="px-3" href="#">The Menu</a>
-                <a class="px-3" href="#">Sidebets</a>
-                <a class="px-3" href="#">History</a>
+                <a class="px-3" href="notes.html">League Notes</a>
+                <a class="px-3" href="sitdown.html">LXG Sitdown</a>
+                <a class="px-3" href="menu.html">The Menu</a>
+                <a class="px-3" href="sidebets.html">Sidebets</a>
+                <a class="px-3" href="history.html">History</a>
             </div>
             <div class="row d-flex justify-content-center pt-3">
                 <p class="m-0">&copy2019 LXG. All rights reserved.</p>
