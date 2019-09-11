@@ -116,12 +116,17 @@ a:hover, #socialIcons a:hover {
     margin-right: 5px;
 }
 
-#claws {
+#claws, #arbys {
     width: 100%;
 }
 
 #tobble, #othTobble, #tobble3 {
     width: 100%;
+}
+
+.underline {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 5px;
 }
 
 footer {
