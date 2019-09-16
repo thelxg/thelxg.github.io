@@ -124,11 +124,6 @@ a:hover, #socialIcons a:hover {
     width: 100%;
 }
 
-.underline {
-    border-bottom: 1px solid #ededed;
-    padding-bottom: 5px;
-}
-
 footer {
     background: #1f1f1f;
     color: #ededed;
@@ -144,14 +139,14 @@ footer {
     width: 100%;
 }
 
+#read-more {
+    background: #333;
+}
 
-
-
-
-
-
-
-
+#read-more-link {
+    font-size: .8rem;
+    text-decoration: underline;
+}
 
 /* Menu Page */
 .background {
